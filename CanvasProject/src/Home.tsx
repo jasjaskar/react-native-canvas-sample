@@ -23,6 +23,7 @@ const Home = () => {
   const getLocalData = () => {
     AsyncStorage.getItem('pathArray').then((result: string) => {
       let arr = result ? JSON.parse(result) : [];
+      // To show most recent saved data at the top
       arr.reverse();
       setData([...arr]);
       setRefreshing(false);

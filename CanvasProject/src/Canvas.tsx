@@ -177,6 +177,7 @@ const Canvas = ({route}) => {
             <TouchableOpacity
               // eslint-disable-next-line react-native/no-inline-styles
               style={{
+                alignSelf:'center',
                 marginLeft: 25,
               }}
               onPress={() => {
